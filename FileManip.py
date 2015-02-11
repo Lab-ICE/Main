@@ -7,8 +7,7 @@ Created on Feb 11, 2015
 import tkFileDialog as tf
 
 class FileManip():
-    def __init__(self, root):
-        self.root = root
+    def __init__(self):
         self.fileOptions()
 
     def fileOptions(self):
@@ -16,7 +15,6 @@ class FileManip():
         file_opt['defaultextension'] = '.csv'
         file_opt['filetypes'] = [('Comma Separated Values', '.csv'), ('Excel', '.xlsx'), ('All Files', '.*')]
         file_opt['initialdir'] = 'C:\\'
-        file_opt['parent'] = self.root
         file_opt['multiple'] = False
         file_opt['title'] = 'File'
 
@@ -47,7 +45,8 @@ class FileManip():
 import Tkinter
 if __name__=='__main__':
     root = Tkinter.Tk()
-    fm = FileManip(root)
+    root.withdraw()
+    fm = FileManip()
     fm.openFile()
     print(fm.openFilename)
     yopts = {}
