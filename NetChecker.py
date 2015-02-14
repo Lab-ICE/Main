@@ -200,9 +200,6 @@ class NetChecker(Frame):
         filemenu.add_command(label="Open File", command=self.openUsrFile)
         filemenu.add_command(label="Save to XML", command=self.saveFileToXML)
 
-        filemenu.add_separator()
-
-        filemenu.add_command(label="Exit", command=self.quit)
         self.menubar.add_cascade(label="File", menu=filemenu)
 
         '''
