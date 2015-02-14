@@ -1,2 +1,5 @@
 # Main
-This rep will hold the main program files involved with project ICE; each should have been tested.
+Files in Main will (possibly):
+* Be complete past at least some testing
+* Be complete and standalone
+* Be complete and tested, but depend on other files
